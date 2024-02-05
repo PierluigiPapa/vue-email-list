@@ -19,13 +19,18 @@
 
             <!-- // SECTION EMAIL // -->
             <ul v-if= "emailList.length >= 10"
-                class="list-group m-3 p-5">
+                class="list-group mt-3 p-5">
                 <li v-for="(element, index) in emailList" 
                 class="list-group-item d-flex justify-content-center border border-0"><span class="fw-medium">{{element}}</span></li>
               </ul>
             <!-- // SECTION EMAIL // -->
 
-              <button class="btn btn-light mt-4"> Genera email</button>
+            <!-- // SECTION BUTTON // -->
+            <div class="text-center">
+                <button class="btn btn-dark mt-4" 
+                @click="generateEmails()">Genera email</button>
+            </div>
+            <!-- // SECTION BUTTON // -->
         </div>
     </div>
 
